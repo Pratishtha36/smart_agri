@@ -1,66 +1,92 @@
-# Smart Agriculture System 🌱
+# 🌱 AI-Enabled Smart Agriculture System using IoT, MQTT, and Machine Learning
 
-Smart Agriculture System using IoT and Machine Learning to monitor environmental conditions, collect sensor data, and assist in smart farming decisions.
+An intelligent smart farming solution that integrates **IoT sensors, MQTT cloud communication, and Machine Learning** to provide real-time environmental monitoring, irrigation intelligence, and crop recommendation.
 
-## Features
-- Real-time sensor data collection
-- Crop prediction using Machine Learning
-- Interactive dashboard visualization
-- MQTT-based IoT communication
-- Automated farm monitoring
-- Data logging and report generation
+---
 
-## Technologies Used
+# 📌 Project Overview
+
+Traditional farming methods often rely on manual monitoring and experience-based decision making, which can lead to:
+
+- Water wastage
+- Over-irrigation or under-irrigation
+- Poor crop selection
+- Lack of real-time monitoring
+
+This project solves these problems by combining:
+
+- 🌡️ Environmental sensing using IoT
+- ☁️ Real-time cloud communication using MQTT
+- 🤖 Machine Learning-based crop recommendation
+- 📊 Live monitoring dashboard using Streamlit
+
+The system continuously collects environmental data such as:
+
+- Temperature
+- Humidity
+- Soil Moisture
+
+The collected data is transmitted using the **MQTT protocol** through a **HiveMQ broker**, processed using Python, and visualized on a Streamlit dashboard.
+
+---
+
+# 🚀 Features
+
+✅ Real-time temperature and humidity monitoring  
+✅ Soil moisture monitoring  
+✅ Intelligent irrigation alerts  
+✅ MQTT cloud communication using HiveMQ  
+✅ ESP32-based IoT integration  
+✅ Machine Learning-based crop recommendation  
+✅ Streamlit dashboard visualization  
+✅ Low-cost and scalable architecture  
+✅ Real-time data analytics  
+
+---
+
+# 🛠️ Technologies Used
+
+## Hardware
+- ESP32
+- DHT11 Sensor
+- Capacitive Soil Moisture Sensor
+- LED Indicator
+
+## Software
+- Arduino IDE
 - Python
-- Machine Learning
-- MQTT
-- CSV Data Handling
-- Dashboard Visualization
+- Streamlit
+- MQTT Protocol
+- HiveMQ Cloud Broker
 
-## Project Structure
+## Libraries
+- WiFi.h
+- WiFiClientSecure.h
+- PubSubClient.h
+- DHT.h
 
-```bash
-smart_agri/
-├── collector.py
-├── dashboard.py
-├── train_model.py
-├── crop_model.pkl
-├── crop_data.csv
-├── sensor_log.csv
-└── users.json
-```
+---
 
-## How to Run
+# 📡 System Architecture
 
-1. Clone the repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/smart_agri.git
-```
-
-2. Open project folder
-
-```bash
-cd smart_agri
-```
-
-3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Run the dashboard
-
-```bash
-python dashboard.py
-```
-
-## Future Improvements
-- Mobile app integration
-- Cloud database support
-- Automated irrigation system
-- AI-based crop disease detection
+```text
+DHT11 + Soil Moisture Sensor
+            ↓
+         ESP32
+            ↓
+      WiFi Connection
+            ↓
+       MQTT Protocol
+            ↓
+      HiveMQ Broker
+            ↓
+    Python Data Collector
+            ↓
+   Machine Learning Model
+            ↓
+     Streamlit Dashboard
+            ↓
+Crop Recommendation & Irrigation Alerts
 
 ## Author
 Pratishtha Takjharia
