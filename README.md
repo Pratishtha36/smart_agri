@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Smart Agriculture System 🌱
 
 Smart Agriculture System using IoT and Machine Learning to monitor environmental conditions, collect sensor data, and assist in smart farming decisions.
