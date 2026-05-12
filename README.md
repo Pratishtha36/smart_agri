@@ -87,8 +87,12 @@ DHT11 + Soil Moisture Sensor
      Streamlit Dashboard
             ↓
 Crop Recommendation & Irrigation Alerts
+```
 
-## Author
+---
+
+# 👨‍💻 Author
+
 Pratishtha Takjharia
 
 
