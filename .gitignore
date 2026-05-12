@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+tempCodeRunnerFile.py
+latest.json
+sensor_log.csv
+farm_report.pdf
